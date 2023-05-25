@@ -33,3 +33,7 @@
     
     A definir pelo director da Escola de Ciências e Tecnologia: Apresentação da aplicação à turma.
     
+# Exclarecimentos
+
+        Segundo o stor o site é para ajudar a pessoa a votar, então isso significa que re<lmente ela insere tudo para depois o site lhe dizer qual será a melhor opção dela!
+        
