@@ -3,7 +3,8 @@
         "Site\\jemis\\node_modules": true,
         "Site\\jemis\\.next": true,
         ".vscode": true,
-        "Docs": true
+        "Docs": true,
+        "Site\\jemis\\next-env.d.ts": true
     },
     "workspace.isHidden": true
 }
