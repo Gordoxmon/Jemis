@@ -10,16 +10,14 @@ export default async function TestConnectionPage() {
   const data = await collection.find().toArray();
 
   return (
-    <main className="items-center justify-between overflow-x-scroll p-4 my-auto mx-auto sm:mx-12 md:mx-16 lg:mx-20 xl:mx-24 min-w-max">
-      <div className="min-w-full max-w-fit p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8  dark:bg-gray-800 dark:border-gray-700">
+    <main className="flex m-4 w-3/4 dark:text-blue-950 justify-center h-3/4">
+      <div className="p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8  dark:bg-zinc-800 dark:border-zinc-900 w-1/2">
         <form className="space-y-6" action="#">
-          <h1 className="2xl:text-4xl xl:text-2xl font-medium text-gray-900 dark:text-white">
-            Login
-          </h1>
+          <h1 className="text-5xl font-semibold text-gray-200 ">Login</h1>
           <div>
             <label
               htmlFor="email"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-gray-200 "
             >
               Your email
             </label>
@@ -27,7 +25,7 @@ export default async function TestConnectionPage() {
               type="email"
               name="email"
               id="email"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 "
               placeholder="name@company.com"
               required
             />
@@ -44,7 +42,7 @@ export default async function TestConnectionPage() {
               name="password"
               id="password"
               placeholder="••••••••"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 "
               required
             />
           </div>
@@ -61,7 +59,7 @@ export default async function TestConnectionPage() {
               </div>
               <label
                 htmlFor="remember"
-                className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                className="ml-2 text-sm font-medium text-gray-900 "
               >
                 Remember me
               </label>
@@ -75,15 +73,15 @@ export default async function TestConnectionPage() {
           </div>
           <button
             type="submit"
-            className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="w-full text-white bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800 shadow-md shadow-yellow-400 "
           >
             Login to your account
           </button>
-          <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
+          <div className="text-sm font-medium text-gray-500 dark:text-gray-50">
             Not registered?{" "}
             <a
               href="#"
-              className="text-blue-700 hover:underline dark:text-blue-500"
+              className="text-neutral-900 hover:underline dark:text-yellow-500 dark:hover:underline dark:decoration-yellow-700 dark:hover:text-yellow-700"
             >
               Create account
             </a>

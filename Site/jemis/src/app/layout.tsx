@@ -1,7 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 
-
 const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Jemis - Login",
@@ -15,10 +14,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-
     <html lang="pt-PT">
-      <body className={" relative min-h-screen flex flex-col"}>
-        <header className="flex-none ">
+      <body className={"flex min-h-screen justify-center items-center"}>
+        {children}
+      </body>
+    </html>
+  );
+}
+/*<header className="flex-none ">
           <nav className="bg-white border-gray-200 dark:bg-gray-900 top-0 min-w-full">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
               <a href="https://flowbite.com/" className="flex items-center">
@@ -98,8 +101,7 @@ export default function RootLayout({
               </div>
             </div>
           </nav>
-        </header>
-        {children}
+        </header> 
         <footer className=" relative  flex-none bottom-0 bg-white rounded-t-lg shadow dark:bg-gray-900 min-w-full ">
           <div className=" w-full max-w-screen-xl p-4 md:py-8 items-center justify-between mx-auto">
             <div className="sm:flex sm:items-center sm:justify-between">
@@ -144,8 +146,4 @@ export default function RootLayout({
             </span>
           </div>
         </footer>
-      </body>
-    </html>
-  );
-}
-/* */
+        */
