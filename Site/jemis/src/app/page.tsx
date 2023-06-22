@@ -10,81 +10,23 @@ export default async function TestConnectionPage() {
   const data = await collection.find().toArray();
 
   return (
-    <main className="flex m-4 w-3/4 dark:text-blue-950 justify-center h-3/4">
-      <div className="p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8  dark:bg-zinc-800 dark:border-zinc-900 w-1/2">
-        <form className="space-y-6" action="#">
-          <h1 className="text-5xl font-semibold text-gray-200 ">Login</h1>
-          <div>
-            <label
-              htmlFor="email"
-              className="block mb-2 text-sm font-medium text-gray-200 "
-            >
-              Your email
+    <main className="justify-center align-middle m-12 w-4/5 h-4/5 lg:-24 lg:w-3/5 lg:h-3/5">
+      <div className="  w-full h-full p-4 sm:p-6 md:p-8 rounded-lg dark:bg-zinc-700 dark:border-zinc-900 ">
+        <form className="flex gap-1 flex-col" action="#">
+          <h1 className="justify-start text-5xl font-bold font-serif">Login</h1>
+          <div className="grid-cols-2 ">
+            <label htmlFor="Email" className="text-base font-medium">
+              Email
             </label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 "
-              placeholder="name@company.com"
-              required
-            />
-          </div>
-          <div>
-            <label
-              htmlFor="password"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            >
-              Your password
+            <input type="text" name="Email" id="Email" />
+            <label htmlFor="Email" className="text-base font-medium">
+              Pass
             </label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="••••••••"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 "
-              required
-            />
+            <input type="text" name="Email" id="Email" />
           </div>
-          <div className="flex items-start">
-            <div className="flex items-start">
-              <div className="flex items-center h-5">
-                <input
-                  id="remember"
-                  type="checkbox"
-                  value=""
-                  className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
-                  required
-                />
-              </div>
-              <label
-                htmlFor="remember"
-                className="ml-2 text-sm font-medium text-gray-900 "
-              >
-                Remember me
-              </label>
-            </div>
-            <a
-              href="#"
-              className="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500"
-            >
-              Lost Password?
-            </a>
-          </div>
-          <button
-            type="submit"
-            className="w-full text-white bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800 shadow-md shadow-yellow-400 "
-          >
-            Login to your account
-          </button>
-          <div className="text-sm font-medium text-gray-500 dark:text-gray-50">
-            Not registered?{" "}
-            <a
-              href="#"
-              className="text-neutral-900 hover:underline dark:text-yellow-500 dark:hover:underline dark:decoration-yellow-700 dark:hover:text-yellow-700"
-            >
-              Create account
-            </a>
+          <div className="flex gap-2 ">
+            <input type="checkbox" name="rmeber" id="remeber" />
+            <label htmlFor="Email" className="text-base font-medium"></label>
           </div>
         </form>
       </div>
