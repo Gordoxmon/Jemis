@@ -1,5 +1,5 @@
 import { connectToDatabase, getDb } from "@/libs/mongoconn";
-
+import Modal from "./modal";
 export default async function TestConnectionPage() {
   await connectToDatabase();
 
@@ -101,48 +101,7 @@ export default async function TestConnectionPage() {
           </div>
         </form>
       </div>
-      {/* <div className="w-full h-full p-4 sm:p-6 md:p-8 rounded-lg dark:bg-zinc-700 dark:border-zinc-900 overflow-scroll">
-        <form className="grid grid-cols-4 gap-2 m-1  h-full" action="#">
-          <h1 className="col-span-4 text-5xl font-bold font-serif">Login</h1>
-          <label
-            htmlFor="Email"
-            className="text-base font-medium justify-self-center"
-          >
-            Email
-          </label>
-          <input type="text" name="Email" id="Email" className="col-span-3" />
-          <label
-            htmlFor="Pass"
-            className="text-base font-medium justify-self-center"
-          >
-            Pass
-          </label>
-          <input type="text" name="Pass" id="Pass" className="col-span-3" />
-          <div className="justify-self-center align-bottom">
-            <input
-              type="checkbox"
-              name="Remember"
-              id="Remember"
-              className="w-fit h-2/4 mr-1"
-            />
-          </div>
-          <label htmlFor="Remember" className="text-sm font-light">
-            Remember
-          </label>
-          <div className="col-span-1"></div>
-          <div className="justify-self-center">
-            <a href="">Forgot password?</a>
-          </div>
-          <div className="col-span-4">
-            <button
-              type="submit"
-              className="w-full font-bold py-2 px-4 rounded-lg bg-zinc-700 hover:bg-zinc-800 text-white  "
-            >
-              Login
-            </button>
-          </div>
-        </form>
-      </div> */}
+      <Modal />
     </main>
   );
 }
