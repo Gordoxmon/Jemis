@@ -1,7 +1,19 @@
-import { connectToDatabase, getDb } from "@/libs/mongoconn";
-import Modal from "./modal";
+/* import { connectToDatabase, getDb } from "@/libs/mongoconn"; */
+import { connectToDatabase, closeDatabase } from "@/libs/mongoconn";
 export default async function TestConnectionPage() {
-  await connectToDatabase();
+  try {
+    const teste = await connectToDatabase("Users");
+    console.log(await teste.find().toArray());
+    closeDatabase();
+    console.log(await teste.find().toArray());
+  } catch (error: any) {
+    console.log("deu ruim: " + error.message);
+  }
+
+  /* 
+  const result = await db.find().toArray();
+  console.log(result); */
+  /*   await connectToDatabase();
 
   const db = getDb();
 
@@ -9,6 +21,7 @@ export default async function TestConnectionPage() {
 
   const data = await collection.find().toArray();
 
+  console.log(data); */
   return (
     <main className="justify-center align-middle m-8 w-4/5 h-4/5  lg:w-3/5 lg:h-3/5 font-sans text-black">
       <div className="max-w-4xl mx-auto my-4 p-8 rounded-xl bg-white shadow-md shadow-zinc-700   dark:bg-zinc-800 dark:shadow-md dark:shadow-zinc-600">
@@ -101,7 +114,6 @@ export default async function TestConnectionPage() {
           </div>
         </form>
       </div>
-      <Modal />
     </main>
   );
 }
