@@ -16,15 +16,22 @@ export async function connectToDatabase(collectionName: string) {
       serverApi: {
         version: ServerApiVersion.v1,
         strict: true,
+        useUnifiedTopology: true,
         deprecationErrors: true,
       },
     });
 
-    await client.connect();
+    console.log(await client.connect());
     db = client.db(dbName);
-    return db.collection(collectionName);
+    const collection = await db.listCollections().toArray();
+    if (
+      collection.filter((c: { name: string }) => c.name === collectionName)
+        .length === 1
+    ) {
+      return db.collection(collectionName);
+    } else throw new Error("Collection não encontrado");
   } catch (err: any) {
-    console.log("algo deu errado:" + err.messege);
+    console.log(err.name + ": " + err.message);
   }
 }
 export async function closeDatabase() {
