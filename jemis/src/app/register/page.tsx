@@ -7,7 +7,7 @@ export default async function Home() {
   return (
     <main className="justify-center align-middle  w-4/5 h-4/5  lg:min-w-3/5 lg:min-h-3/5 font-sans text-black">
       <Card title="Register">
-        <form action="" className="my-6 text-red-700">
+        <form action="" className="my-6">
           <div className="flex flex-col space-y-5">
             <InputText
               id="email"
@@ -26,7 +26,6 @@ export default async function Home() {
             >
               Password
             </InputText>
-            hover:text-white hover:bg-zinc-900
             <InputText
               id="repassword"
               name="repassword"
