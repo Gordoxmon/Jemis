@@ -1,6 +1,6 @@
-import Button from "@/libs/components/Button";
-import Card from "@/libs/components/Card";
-import InputText from "@/libs/components/InputText";
+import Button from "@/app/components/server/Button";
+import Card from "@/app/components/server/Card";
+import InputText from "@/app/components/server/InputText";
 import Link from "next/link";
 
 export default async function Home() {

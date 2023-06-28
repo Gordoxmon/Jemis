@@ -1,6 +1,6 @@
-import Button from "@/libs/components/Button";
-import Card from "@/libs/components/Card";
-import InputText from "@/libs/components/InputText";
+import Button from "@/app/components/server/Button";
+import Card from "@/app/components/server/Card";
+import InputText from "@/app/components/server/InputText";
 import Link from "next/link";
 
 export default async function Home() {
@@ -26,10 +26,7 @@ export default async function Home() {
             >
               Password
             </InputText>
-            <input
-              type="text"
-              className="w-full py-3 font-semibold text-black outline outline-1 outline-zinc-800   hover:text-white hover:bg-zinc-900 dark:text-zinc-100 dark:outline-zinc-100 dark:hover:bg-zinc-100 dark:hover:text-zinc-900 rounded-lg border-zinc-200 hover:shadow inline-flex space-x-2 items-center justify-center"
-            />
+            hover:text-white hover:bg-zinc-900
             <InputText
               id="repassword"
               name="repassword"
