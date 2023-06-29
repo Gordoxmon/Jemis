@@ -5,6 +5,12 @@ interface myprops {
   name: string;
   type?: string;
   placeholder?: string;
+  pattern?: string;
+  title?: string;
+  autocomplete?: "on" | "off";
+  autoFocus?: any;
+  disabled?: any;
+  readOnly?: any;
   required?: any;
 }
 

@@ -1,0 +1,282 @@
+[
+  {
+    "_id": 1,
+    "User_id": 1,
+    "name": "Luta de galos",
+    "specs": [
+      {
+        "_id": 1,
+        "name": "massa",
+        "metod": ">"
+      },
+      {
+        "_id": 2,
+        "name": "força",
+        "metod": ">"
+      }
+    ],
+    "objects": [
+      {
+        "_id": 1,
+        "name": "galo1",
+        "descricion": "galo pequeno",
+        "valeus": [
+          {
+            "_id": 1,
+            "spec_id": 1,
+            "value": 5
+          },
+          {
+            "_id": 2,
+            "spec_id": 2,
+            "value": 5
+          }
+        ],
+        "points": 1
+      },
+      {
+        "_id": 2,
+        "name": "galo2",
+        "descricion": "galo grande",
+        "valeus": [
+          {
+            "_id": 1,
+            "spec_id": 1,
+            "value": 9
+          },
+          {
+            "_id": 2,
+            "spec_id": 2,
+            "value": 2
+          }
+        ],
+        "points": 1
+      }
+    ],
+    "result": 1
+  },
+  {
+    "_id": 1,
+    "User_id": 1,
+    "name": "Luta de galos",
+    "specs": [
+      {
+        "_id": 1,
+        "name": "massa",
+        "metod": ">"
+      },
+      {
+        "_id": 2,
+        "name": "força",
+        "metod": ">"
+      }
+    ],
+    "objects": [
+      {
+        "_id": 1,
+        "name": "galo1",
+        "descricion": "galo pequeno",
+        "valeus": [
+          {
+            "_id": 1,
+            "spec_id": 1,
+            "value": 5
+          },
+          {
+            "_id": 2,
+            "spec_id": 2,
+            "value": 5
+          }
+        ],
+        "points": 1
+      },
+      {
+        "_id": 2,
+        "name": "galo2",
+        "descricion": "galo grande",
+        "valeus": [
+          {
+            "_id": 1,
+            "spec_id": 1,
+            "value": 9
+          },
+          {
+            "_id": 2,
+            "spec_id": 2,
+            "value": 2
+          }
+        ],
+        "points": 1
+      }
+    ],
+    "result": 1
+  },
+  {
+    "_id": 1,
+    "User_id": 1,
+    "name": "Luta de galos",
+    "specs": [
+      {
+        "_id": 1,
+        "name": "massa",
+        "metod": ">"
+      },
+      {
+        "_id": 2,
+        "name": "força",
+        "metod": ">"
+      }
+    ],
+    "objects": [
+      {
+        "_id": 1,
+        "name": "galo1",
+        "descricion": "galo pequeno",
+        "valeus": [
+          {
+            "_id": 1,
+            "spec_id": 1,
+            "value": 5
+          },
+          {
+            "_id": 2,
+            "spec_id": 2,
+            "value": 5
+          }
+        ],
+        "points": 1
+      },
+      {
+        "_id": 2,
+        "name": "galo2",
+        "descricion": "galo grande",
+        "valeus": [
+          {
+            "_id": 1,
+            "spec_id": 1,
+            "value": 9
+          },
+          {
+            "_id": 2,
+            "spec_id": 2,
+            "value": 2
+          }
+        ],
+        "points": 1
+      }
+    ],
+    "result": 1
+  },
+  {
+    "_id": 1,
+    "User_id": 1,
+    "name": "Luta de galos",
+    "specs": [
+      {
+        "_id": 1,
+        "name": "massa",
+        "metod": ">"
+      },
+      {
+        "_id": 2,
+        "name": "força",
+        "metod": ">"
+      }
+    ],
+    "objects": [
+      {
+        "_id": 1,
+        "name": "galo1",
+        "descricion": "galo pequeno",
+        "valeus": [
+          {
+            "_id": 1,
+            "spec_id": 1,
+            "value": 5
+          },
+          {
+            "_id": 2,
+            "spec_id": 2,
+            "value": 5
+          }
+        ],
+        "points": 1
+      },
+      {
+        "_id": 2,
+        "name": "galo2",
+        "descricion": "galo grande",
+        "valeus": [
+          {
+            "_id": 1,
+            "spec_id": 1,
+            "value": 9
+          },
+          {
+            "_id": 2,
+            "spec_id": 2,
+            "value": 2
+          }
+        ],
+        "points": 1
+      }
+    ],
+    "result": 1
+  },
+  {
+    "_id": 1,
+    "User_id": 1,
+    "name": "Luta de galos",
+    "specs": [
+      {
+        "_id": 1,
+        "name": "massa",
+        "metod": ">"
+      },
+      {
+        "_id": 2,
+        "name": "força",
+        "metod": ">"
+      }
+    ],
+    "objects": [
+      {
+        "_id": 1,
+        "name": "galo1",
+        "descricion": "galo pequeno",
+        "valeus": [
+          {
+            "_id": 1,
+            "spec_id": 1,
+            "value": 5
+          },
+          {
+            "_id": 2,
+            "spec_id": 2,
+            "value": 5
+          }
+        ],
+        "points": 1
+      },
+      {
+        "_id": 2,
+        "name": "galo2",
+        "descricion": "galo grande",
+        "valeus": [
+          {
+            "_id": 1,
+            "spec_id": 1,
+            "value": 9
+          },
+          {
+            "_id": 2,
+            "spec_id": 2,
+            "value": 2
+          }
+        ],
+        "points": 1
+      }
+    ],
+    "result": 1
+  }
+]

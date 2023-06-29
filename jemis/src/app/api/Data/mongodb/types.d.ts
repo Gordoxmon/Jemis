@@ -1,12 +1,13 @@
-type User = {
+interface User {
   _id?: number;
   email: string;
   password: string;
-};
+}
 
-type Indagacoes = {
+interface Indagacoes {
   _id: number;
   User_id: number;
+  name: string;
   specs: Array<{
     _id: number;
     name: string;
@@ -24,4 +25,4 @@ type Indagacoes = {
     points: number;
   }>;
   result: number;
-};
+}

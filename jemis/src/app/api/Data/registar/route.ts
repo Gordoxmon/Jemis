@@ -7,25 +7,36 @@ import { redirect } from "next/navigation";
 
 export async function GET(req: Request, res: NextResponse) {
   let data = await InsertUser();
-  let result = await data.find().toArray();
+  const result_email = await data.find(
+    {},
+    { projection: { _id: 0, email: 1 } }
+  );
+  let result_id = await data.findOne(
+    {},
+    { sort: { _id: -1 }, projection: { _id: 1 } }
+  );
 
   const { searchParams } = new URL(req.url);
   const email = searchParams.get("email");
   const password = searchParams.get("password");
   const re_password = searchParams.get("repassword");
-  if (
-    result.map((user: any) => {
-      user.email = email;
-    })
-  ) {
-    if (password === re_password) {
-      const user = {
-        email,
-        password,
-      };
+  if (result_id ? true : false) {
+    let _id = result_id._id + 1;
+    if (
+      result_email.map((email: any) => {
+        email = email;
+      })
+    ) {
+      if (password === re_password) {
+        const user = {
+          _id,
+          email,
+          password,
+        };
 
-      data.insertOne(user);
-      redirect("/login");
+        data.insertOne(user);
+        redirect("/login");
+      }
     }
   }
 }

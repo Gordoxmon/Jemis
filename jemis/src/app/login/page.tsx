@@ -2,9 +2,14 @@ import Card from "@/app/components/server/Card";
 import Button from "@/app/components/server/Button";
 import InputText from "@/app/components/server/InputText";
 import Link from "next/link";
-import { ReadUser } from "../api/data/mongodb/mongo";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Jemis - Login",
+  description: "Login page for Jemis",
+};
 
 export default async function Home() {
   if (cookies().has("jwtToken")) {
@@ -19,6 +24,8 @@ export default async function Home() {
               id="email"
               name="email"
               placeholder="Enter email address"
+              autocomplete="off"
+              autoFocus
               required
             >
               Email

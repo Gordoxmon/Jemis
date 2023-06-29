@@ -4,6 +4,12 @@ import InputText from "@/app/components/server/InputText";
 import Link from "next/link";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Jemis - Register",
+  description: "Register page for Jemis",
+};
 export default async function Register() {
   if (cookies().has("jwtToken")) {
     redirect("/");
@@ -17,6 +23,8 @@ export default async function Register() {
               id="email"
               name="email"
               placeholder="Enter email address"
+              autocomplete="off"
+              autoFocus
               required
             >
               Email
@@ -26,6 +34,8 @@ export default async function Register() {
               name="password"
               type="password"
               placeholder="Enter your password"
+              pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$/"
+              title="Password deve conter pelo menos 1 letra maiúscula, 1 letra minúscula, 1 número e 1 caractere especial com o tamanho entre 8 a 16 caracteres"
               required
             >
               Password
