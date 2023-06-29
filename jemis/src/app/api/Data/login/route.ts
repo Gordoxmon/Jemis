@@ -1,12 +1,12 @@
 import { NextResponse } from "next/server";
-import { ReadUser } from "../mongodb/mongo";
+import { ReadDeleteUser } from "../mongodb/mongo";
 import { cookies } from "next/headers";
 import jwt from "jsonwebtoken";
 import { redirect } from "next/navigation";
 /* começo do desenvolvimento das funçoes da base de dados */
 
 export async function GET(req: Request, res: NextResponse) {
-  let xd = await ReadUser();
+  let xd = await ReadDeleteUser();
   const { searchParams } = new URL(req.url);
   const email = searchParams.get("email");
   const password = searchParams.get("password");

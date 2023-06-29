@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { InsertUser, ReadUser } from "../mongodb/mongo";
+import { InsertUser } from "../mongodb/mongo";
 import { cookies } from "next/headers";
 import jwt from "jsonwebtoken";
 import { redirect } from "next/navigation";
