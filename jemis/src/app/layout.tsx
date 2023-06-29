@@ -1,11 +1,11 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
-export const metadata = {
+export const metadata: Metadata = {
   title: "Jemis - Login",
   description: "Login page for Jemis",
-  author: "group",
 };
 
 export default function RootLayout({
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-PT">
-      <body className={"flex h-screen justify-center items-center "}>
+      <body className={"flex flex-col h-screen justify-center items-center"}>
         {children}
       </body>
     </html>
