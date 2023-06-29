@@ -13,6 +13,15 @@ export default async function Home() {
       <form action="/api/data/sair" method="GET">
         <Button>Sair</Button>
       </form>
+      <form action="/api/indagacoes/apagar" method="GET">
+        <Button>apagar</Button>
+      </form>
+      <form action="/api/indagacoes/inserir" method="GET">
+        <Button>inserir</Button>
+      </form>
+      <form action="/api/indagacoes/ler" method="GET">
+        <Button>ler</Button>
+      </form>
     </main>
   );
 }
