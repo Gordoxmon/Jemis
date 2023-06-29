@@ -14,8 +14,8 @@ function From() {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch("@/app/api/login.ts", {
-        method: "POST",
+      const response = await fetch("@/app/api/echo", {
+        method: "get",
         body: formData,
       });
 
@@ -29,7 +29,7 @@ function From() {
     }
   };
   return (
-    <form className="my-6" onSubmit={handleSubmit}>
+    <form className="my-6" action"/api/echo "}>
       <div className="flex flex-col space-y-5">
         <InputText
           id="email"
