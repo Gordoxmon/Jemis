@@ -1,10 +1,5 @@
-import dotenv from "dotenv";
 import { MongoClient, Db, ServerApiVersion } from "mongodb";
-
-/* setup das var env */
-dotenv.config();
-
-/* Declaração das variaveis globais */
+import { NextApiRequest, NextApiResponse } from "next";
 const uri = process.env.MONGODB_URI;
 const dbName = process.env.DATABASE_NAME;
 let client: typeof MongoClient;
@@ -39,13 +34,17 @@ const Conn = async (collectionName: string) => {
   }
 };
 
-const InsetUser = async (data: User) => {
+const InsertUser = async (data: User) => {
   /* Conecção a collection */
   db = Conn("Users");
 };
-const ReadUser = async (data: User) => {
-  /* Conecção a collection */
-  db = Conn("Users");
+const ReadUser = async (req: NextApiRequest, res: NextApiResponse) => {
+  console.log(req.body);
+  /*  db = await Conn("Users");
+  const fetched = await db.find({ email: data.email }).toArray();
+  if (fetched.lenght != 0) {
+    return;
+  } else console.log("Email não encontrado"); */
 };
 
 const DeleteUser = async (data: User) => {
@@ -76,5 +75,5 @@ export {
   ReadIndagacao,
   ReadUser,
   DeleteUser,
-  InsetUser,
+  InsertUser,
 };
