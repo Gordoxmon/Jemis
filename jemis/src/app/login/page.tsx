@@ -1,14 +1,19 @@
 import Card from "@/app/components/server/Card";
 import Button from "@/app/components/server/Button";
 import InputText from "@/app/components/server/InputText";
-import Form from "@/app/components/server/From";
 import Link from "next/link";
+import { ReadUser } from "../api/data/mongodb/mongo";
+import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
 
 export default async function Home() {
+  if (cookies().has("jwtToken")) {
+    redirect("/");
+  }
   return (
     <main className="justify-center align-middle m-8 w-4/5 h-4/5  lg:w-3/5 lg:h-3/5 font-sans text-black">
       <Card title="Login">
-        <form action="/api/echo" method="POST">
+        <form action="/api/data/login" method="GET">
           <div className="flex flex-col space-y-5">
             <InputText
               id="email"

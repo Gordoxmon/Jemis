@@ -2,12 +2,16 @@ import Button from "@/app/components/server/Button";
 import Card from "@/app/components/server/Card";
 import InputText from "@/app/components/server/InputText";
 import Link from "next/link";
-
-export default async function Home() {
+import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
+export default async function Register() {
+  if (cookies().has("jwtToken")) {
+    redirect("/");
+  }
   return (
     <main className="justify-center align-middle  w-4/5 h-4/5  lg:min-w-3/5 lg:min-h-3/5 font-sans text-black">
       <Card title="Register">
-        <form action="" className="my-6">
+        <form action="/api/data/registar" className="my-6" method="GET">
           <div className="flex flex-col space-y-5">
             <InputText
               id="email"
