@@ -2,9 +2,9 @@ import React from "react";
 
 interface component {
   children: React.ReactNode;
-  className?: string;
-  value?: string;
-  formAction?: string;
+  id?: string;
+  value?: number;
+  name?: string;
 }
 
 const Button = ({ children, ...props }: component) => {

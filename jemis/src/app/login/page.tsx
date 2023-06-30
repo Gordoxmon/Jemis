@@ -35,6 +35,7 @@ export default async function Home() {
               name="password"
               type="password"
               placeholder="Enter your password"
+
               required
             >
               Password

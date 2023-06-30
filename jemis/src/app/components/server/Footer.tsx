@@ -3,7 +3,7 @@ interface myprops {
   className?: string;
 }
 function Footer({ ...props }: myprops) {
-  return <footer {...props}>Footer</footer>;
+  return <footer {...props}>Jemis</footer>;
 }
 
 export default Footer;

@@ -34,7 +34,7 @@ export default async function Register() {
               name="password"
               type="password"
               placeholder="Enter your password"
-              pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$/"
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[.!@#$%^&*()-=_+]).{8,16}$"
               title="Password deve conter pelo menos 1 letra maiúscula, 1 letra minúscula, 1 número e 1 caractere especial com o tamanho entre 8 a 16 caracteres"
               required
             >
