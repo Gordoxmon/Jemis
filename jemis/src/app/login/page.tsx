@@ -16,7 +16,7 @@ export default async function Home() {
     redirect("/");
   }
   return (
-    <main className="justify-center align-middle m-8 w-4/5 h-4/5  lg:w-3/5 lg:h-3/5 font-sans text-black">
+    <main className="justify-center align-middle m-auto mt-auto h-4/5  lg:w-3/5 lg:h-3/5 font-sans text-black">
       <Card title="Login">
         <form action="/api/data/login" method="GET">
           <div className="flex flex-col space-y-5">

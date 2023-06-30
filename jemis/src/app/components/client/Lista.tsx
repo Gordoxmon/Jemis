@@ -82,7 +82,7 @@ function Lista({ data }: ListaProps) {
       {data.map((item) => (
         <Card
           key={item._id}
-          className="flex w-max p-8 rounded-xl bg-white shadow-md shadow-zinc-700 dark:bg-zinc-800 dark:shadow-md dark:shadow-zinc-600 relative"
+          className="flex max-w-full p-8 rounded-xl bg-white shadow-md shadow-zinc-700 dark:bg-zinc-800 dark:shadow-md dark:shadow-zinc-600 relative"
         >
           <div>
             <div className="font-bold">Indagação_id: {item._id}</div>

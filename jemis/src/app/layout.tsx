@@ -12,7 +12,9 @@ export default function RootLayout({
       lang="pt-PT"
       className="  h-screen   font-sans text-black dark:text-white"
     >
-      <body className={"min-h-screen "}>{children}</body>
+      <body className={"min-h-screen align-middle justify-center"}>
+        {children}
+      </body>
     </html>
   );
 }

@@ -12,7 +12,6 @@ function Nav() {
       <form action="/api/data/delete">
         <Button>Apagar Conta</Button>
       </form>
-      <Button>Apagar Conta</Button>
       <Button>
         <Link href="/dashboard/newquestion">Inserir indagação</Link>
       </Button>
