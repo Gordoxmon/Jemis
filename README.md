@@ -1,49 +1,36 @@
-# Tema:
-    Pretendemos desenvolver uma aplicação web que ajude um utilizador a votar. A aplicação pode ser adoptada para eleições académicas, sociais ou mesmo para órgãos políticos.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# Como é que a aplicação deve funcionar?
-    Os utilizadores devem registar-se com um email e uma password. Após o registo, o utilizador poderá aceder à sua área de trabalho.
-    
-    O utilizador deve começar por inserir os candidatos à eleição (pessoas ou listas) e as ideias defendidas pelos candidatos de acordo com o conhecimento que tem de cada um.
-    
-    De seguida, o utilizador deve inserir as suas ideias para a eleição e o peso de cada ideia. A soma das percentagens atribuídas às ideias deve ser exactamente 100%.
-    
-    Por fim, o utilizador deve clicar num botão para iniciar os cálculos. O algoritmo da aplicação deve comparar as preferências do utilizador com as ideias propostas pelos candidatos e sugerir ao utilizador a opção de voto que melhor se adequa.
-    
-    No final, o utilizador tem a possibilidade de repetir o processo desde o início, manter os dados guardados ou apagar todos os dados que criou e a sua conta.
+## Getting Started
 
-# Desenvolvimento:
-    Os grupos de desenvolvimento devem incluir um mínimo de 4 e um máximo de 6 alunos. Cada aluno tem uma função no processo.
-    
-    A aplicação deve ser executada num navegador Web e as tecnologias adoptadas para o desenvolvimento são limitadas a HTML5, CSS3, PHP, NODE, JAVASCRIPT, REACT, ANGULAR, BOOTSTRAP, MYSQL, MariaDB, NoSQL, MongoDB.
-    
-    Frameworks como Laravel, Code Igniter, ou similares não são permitidas.
+First, run the development server:
 
-# Datas importantes:
+```bash
 
-    1 de Junho: Os nomes e emails dos membros dos grupos de trabalho devem ser enviados por email para jaam@ispgaya.pt ou na plataforma NONIO.
-    
-    8 de Junho: O papel dos membros no projecto, um storyboard da aplicação, as tecnologias a adoptar e o modelo de base de dados devem ser enviados para a plataforma NONIO. Exemplos de funções dos membros: analista, programador, relações públicas, secretário, designer, ...
-    
-    15 de Junho: Apresentação da versão alfa na aula (apresentação informal)
-    
-    22 de Junho: Apresentação da versão beta na aula (apresentação informal)
-    
-    29: Junho: Entrega do código e do relatório técnico
-    
-    A definir pelo director da Escola de Ciências e Tecnologia: Apresentação da aplicação à turma.
-    
-# Exclarecimentos
-
-        Segundo o stor o site é para ajudar a pessoa a votar, então isso significa que re<lmente ela insere tudo para depois o site lhe dizer qual será a melhor opção dela!
-        
-
-
-
-
-
-
-
-# corer para    aplicação
-npm install
+npm install 
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
